@@ -25,7 +25,7 @@ Install pytorch according to your environment, see https://pytorch.org/
  2. `cd baseline`
  3. run `python train.py` or `python random-forest.py` to get the baseline model result.
 ### How to use it on your own dataset
-Since our dataset uses Codesplit and Designite tool to analyze the code and get code smells, you can use other tools like SonarQube to analyze other Java code.
+Since our dataset uses Codesplit and Designite tool to analyze the code and get code smells(in origin_data folder), you can use other tools like SonarQube to analyze other Java code.
 1. `Codesplit: https://github.com/tushartushar/CodeSplitJava`
 2. `Designite: https://www.designite-tools.com/`
 3. `SonarQube: https://rules.sonarsource.com/java/type/Code%20Smell`
