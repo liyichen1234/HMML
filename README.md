@@ -19,22 +19,17 @@ Install all the dependent packages via pip:
  
 Install pytorch according to your environment, see https://pytorch.org/ 
 
-
-### Prepare for Dataset
-1. `cd astnn`
-2. run `python pipeline.py` to generate preprocessed data.
-3. run `python train.py` for training and evaluation
-
 ### Code Smell Detection
 
- 1. `cd clone`
- 2. run `python pipeline.py --lang c` or `python pipeline.py --lang java` to generate preprocessed data for the two datasets.
- 2. run `python train.py --lang c` to train on OJClone, `python train.py --lang java` on BigCLoneBench respectively.
-
+ 1. run `python train_HMML.py` or `python test_HMML.py` to train and test our model.
+ 2. `cd baseline`
+ 3. run `python train.py` or `python random-forest.py` to get the baseline model result.
 ### How to use it on your own dataset
+Since our dataset uses Codesplit and Designite tool to analyze the code and get code smells, you can use other tools like SonarQube to analyze other Java code.
+`Codesplit: https://github.com/tushartushar/CodeSplitJava`
+`Designite: https://www.designite-tools.com/`
+`SonarQube: https://rules.sonarsource.com/java/type/Code%20Smell`
 
-Please refer to the `pkl` files in the corresponding directories of the two tasks. These files can be loaded by `pandas`.
- 
 ### Citation
   If you find this code useful in your research, please, consider citing our paper:
   > 
